@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "5f15dd84d47dbd4530b2fb60"
+  },
+  "status": "Pending",
+  "orderItems": [
+    {
+      "_id": {
+        "$oid": "5f15dd84d47dbd4530b2fb61"
+      },
+      "product": {
+        "$oid": "5f15d8852a025143f9593a7c"
+      },
+      "quantity": 2
+    },
+    {
+      "_id": {
+        "$oid": "5f15dd84d47dbd4530b2fb62"
+      },
+      "product": {
+        "$oid": "5f15d92ee520d44421ed8e9b"
+      },
+      "quantity": 4
+    }
+  ],
+  "shippingAddress1": "sazovicka",
+  "shippingAddress2": "zlicin",
+  "city": "Praha",
+  "zip": "15521",
+  "country": "Czech Republic",
+  "phone": 702241333,
+  "totalPrice": 350,
+  "user": {
+    "$oid": "5f15d5b2cb4a6642bddc0fe7"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f15de0cd47dbd4530b2fb63"
+  },
+  "status": "Pending",
+  "orderItems": [
+    {
+      "_id": {
+        "$oid": "5f15de0cd47dbd4530b2fb64"
+      },
+      "product": {
+        "$oid": "5f15d8852a025143f9593a7c"
+      },
+      "quantity": 6
+    },
+    {
+      "_id": {
+        "$oid": "5f15de0cd47dbd4530b2fb65"
+      },
+      "product": {
+        "$oid": "5f15d92ee520d44421ed8e9b"
+      },
+      "quantity": 4
+    }
+  ],
+  "shippingAddress1": "Andel",
+  "shippingAddress2": "Praha 5",
+  "city": "Praha",
+  "zip": "15521",
+  "country": "Czech Republic",
+  "phone": 702241333,
+  "totalPrice": 950,
+  "user": {
+    "$oid": "5f15d5b2cb4a6642bddc0fe7"
+  },
+  "__v": 0
+}]

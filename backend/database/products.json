@@ -1,0 +1,86 @@
+[{
+  "_id": {
+    "$oid": "5f15d8852a025143f9593a7c"
+  },
+  "image": "should be some path",
+  "brand": "PS3",
+  "price": 250,
+  "rating": 1,
+  "numReviews": 0,
+  "isFeatured": true,
+  "name": "FIFA 20",
+  "description": "The most hard FIFA ever",
+  "category": {
+    "$oid": "5f15d5cdcb4a6642bddc0fe9"
+  },
+  "countInStock": 25,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f15d92ee520d44421ed8e9b"
+  },
+  "image": "should be some path",
+  "brand": "IKEA",
+  "price": 350.9,
+  "rating": 5,
+  "numReviews": 0,
+  "isFeatured": true,
+  "name": "Garden Chair",
+  "description": "beautiful chair for garden",
+  "category": {
+    "$oid": "5f15d5b7cb4a6642bddc0fe8"
+  },
+  "countInStock": 10,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f15d964e520d44421ed8e9c"
+  },
+  "image": "should be some path",
+  "brand": "OBI",
+  "price": 1350.9,
+  "rating": 5,
+  "numReviews": 0,
+  "isFeatured": true,
+  "name": "Swimming Pool",
+  "description": "beautiful Swimming Pool for garden",
+  "category": {
+    "$oid": "5f15d5b7cb4a6642bddc0fe8"
+  },
+  "countInStock": 10,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f15d9b3e520d44421ed8e9d"
+  },
+  "image": "should be some path",
+  "brand": "OBI",
+  "price": 490.9,
+  "rating": 5,
+  "numReviews": 0,
+  "isFeatured": true,
+  "name": "Grass Cut Machine",
+  "description": "Grass Cut Machine for garden",
+  "category": {
+    "$oid": "5f15d5b7cb4a6642bddc0fe8"
+  },
+  "countInStock": 5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f15da13e520d44421ed8e9e"
+  },
+  "image": "should be some path",
+  "brand": "Mobilix",
+  "price": 1000,
+  "rating": 5,
+  "numReviews": null,
+  "isFeatured": true,
+  "name": "Sofa",
+  "description": "Big Sofa for living room",
+  "category": {
+    "$oid": "5f15d5b2cb4a6642bddc0fe7"
+  },
+  "countInStock": 2,
+  "__v": 0
+}]
