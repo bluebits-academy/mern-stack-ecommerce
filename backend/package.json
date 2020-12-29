@@ -1,10 +1,11 @@
 {
-  "name": "mean-eshop",
+  "name": "eshop",
   "version": "1.0.0",
-  "description": "MEAN eshop backend",
-  "main": "index.js",
+  "description": "backend of the eshop",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
@@ -16,12 +17,9 @@
     "express": "^4.17.1",
     "express-jwt": "^6.0.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.25",
+    "mongoose": "^5.10.19",
     "morgan": "^1.10.0",
     "multer": "^1.4.2",
-    "nodemon": "^2.0.4"
-  },
-  "devDependencies": {
-    "prettier": "2.0.5"
+    "nodemon": "^2.0.6"
   }
 }
