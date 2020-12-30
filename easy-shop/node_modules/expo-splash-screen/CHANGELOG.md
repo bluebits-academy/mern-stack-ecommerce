@@ -1,0 +1,66 @@
+# Changelog
+
+## Unpublished
+
+### 🛠 Breaking changes
+
+### 🎉 New features
+
+### 🐛 Bug fixes
+
+## 0.6.2 — 2020-09-28
+
+### 🛠 Breaking changes
+
+- On Android scoped `SplashScreen` objects into separate `singletons` sub-package. ([#10294](https://github.com/expo/expo/pull/10294) by [@bbarthec](https://github.com/bbarthec))
+- Updated `@expo/configure-splash-screen` to `v0.2.0`.
+
+## 0.6.1 — 2020-09-17
+
+### 🐛 Bug fixes
+
+- On iOS fixed non-working `SplashScreen.preventAutoHide` introduced in version `0.4.0`. ([#10192](https://github.com/expo/expo/pull/10192) by [@bbarthec](https://github.com/bbarthec))
+- Fixed crash when the app was opened in the background on iOS. ([#10157](https://github.com/expo/expo/pull/10157) by [@sjchmiela](https://github.com/sjchmiela))
+
+## 0.6.0 — 2020-08-18
+
+### 🎉 New features
+
+- On iOS the name of the LaunchScreen file is read from the project configuration and fallbacks to default `SplashScreen` if not found. ([#9622](https://github.com/expo/expo/pull/9622) by [@bbarthec](https://github.com/bbarthec))
+
+## 0.5.0 — 2020-07-30
+
+### 🐛 Bug fixes
+
+- Bump dependency on @expo/configure-splash-screen to transitively bump logkitty version pulled in through @react-native-community/cli-platform-android.
+- Fixed crash adding `splashScreenView` to parent when it was already added on Android. ([#9451](https://github.com/expo/expo/pull/9451) by [@RodolfoGS](https://github.com/RodolfoGS))
+
+## 0.4.0 — 2020-07-16
+
+### 🛠 Breaking changes
+
+- `SplashScreen.show()` native method changes it's signature. Its third argument is now a `Boolean` flag that tells the system whether the `StatusBar` component should be `translucent`. Pass `false` to preserve the previous default behavior. ([#8535](https://github.com/expo/expo/pull/8535) by [@bbarthec](https://github.com/bbarthec))
+
+### 🐛 Bug fixes
+
+- Fixed flicker in-between SplashScreen and ReactApp phases on iOS. ([#8739](https://github.com/expo/expo/pull/8739) by [@bbarthec](https://github.com/bbarthec))
+
+## 0.3.1 — 2020-05-29
+
+*This version does not introduce any user-facing changes.*
+
+## 0.3.0 — 2020-05-27
+
+### 🛠 Breaking changes
+
+- `expo-splash-screen-command` is now replaced by `@expo/configure-splash-screen`. Functionality is not affected.
+
+### 🐛 Bug fixes
+
+- add polyfill for usage within managed workflow
+
+## 0.2.0
+
+### 🎉 New features
+
+- expo-splash-screen-command is now bundled with expo-splash-screen and helps you to automatically configure your splash screen in bare React Native apps. Install expo-splash-screen in your project then run `yarn expo-splash-screen --help` for more information.

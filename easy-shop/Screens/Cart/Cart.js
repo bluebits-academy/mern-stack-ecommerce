@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   View,
   Dimensions,
   StyleSheet,
-  Button,
   TouchableOpacity,
 } from "react-native";
 import {
@@ -11,11 +10,7 @@ import {
   Text,
   Left,
   Right,
-  H1,
-  ListItem,
-  Thumbnail,
-  Body,
-  List,
+  H1
 } from "native-base";
 import { SwipeListView } from 'react-native-swipe-list-view'
 import CartItem from './CartItem'
@@ -25,10 +20,13 @@ import EasyButton from "../../Shared/StyledComponents/EasyButton"
 
 import { connect } from "react-redux";
 import * as actions from "../../Redux/Actions/cartActions";
+import AuthGlobal from "../../Context/store/AuthGlobal"
 
 var { height, width } = Dimensions.get("window");
 
 const Cart = (props) => {
+
+  const context = useContext(AuthGlobal);
 
     var total = 0;
     props.cartItems.forEach(cart => {
@@ -77,6 +75,7 @@ const Cart = (props) => {
                 </EasyButton>
             </Right>
             <Right>
+              {context.stateUser.isAuthenticated ? (
                 <EasyButton
                   primary
                   medium
@@ -84,6 +83,16 @@ const Cart = (props) => {
                 >
                 <Text style={{ color: 'white' }}>Checkout</Text>
                 </EasyButton>
+              ) : (
+                <EasyButton
+                  secondary
+                  medium
+                  onPress={() => props.navigation.navigate('Login')}
+                >
+                <Text style={{ color: 'white' }}>Login</Text>
+                </EasyButton>
+              )}
+                
             </Right>
           </View>
         </Container>

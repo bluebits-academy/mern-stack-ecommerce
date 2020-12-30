@@ -1,6 +1,5 @@
 import { Platform } from 'react-native'
 
-let baseURL = 'https://eshop-server.herokuapp.com/api/v1/'
 
 // let baseURL = '';
 
