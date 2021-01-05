@@ -7,6 +7,9 @@ This repository is the code representation for the udemy course "MERN Stack E-Co
 
 ## Run
 
+### Configure Database Connection String
+- You need to go to `.env` file and add your connection string to your mongoDB database based on how it explained in the course.
+
 ### Install
 
 ```
