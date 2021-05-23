@@ -1,0 +1,1 @@
+{"version":3,"sources":["docsUrl.ts"],"names":["docsUrl","path"],"mappings":";;;;;;;AAAe,SAASA,OAAT,CAAiBC,IAAjB,EAA+B;AAC5C,wDAA+CA,IAA/C;AACD","sourcesContent":["export default function docsUrl(path: string) {\n  return `https://reactnavigation.org/docs/4.x/${path}`;\n}\n"]}

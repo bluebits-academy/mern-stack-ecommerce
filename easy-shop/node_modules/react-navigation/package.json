@@ -1,0 +1,40 @@
+{
+  "name": "react-navigation",
+  "version": "4.4.3",
+  "description": "Routing and navigation for your React Native apps",
+  "main": "src/index.js",
+  "types": "typescript/react-navigation.d.ts",
+  "repository": {
+    "url": "git@github.com:react-navigation/react-navigation.git",
+    "type": "git"
+  },
+  "author": "Adam Miskiewicz <adam@sk3vy.com>, Eric Vicenti <ericvicenti@gmail.com>, Brent Vatne <brent@expo.io>, Satyajit Sahoo <satyajit.happy@gmail.com>",
+  "license": "MIT",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "src",
+    "NavigationTestUtils.js",
+    "typescript"
+  ],
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "dependencies": {
+    "@react-navigation/core": "^3.7.9",
+    "@react-navigation/native": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.53",
+    "@types/react-native": "^0.63.30",
+    "@types/react-test-renderer": "^16.9.3",
+    "react": "~16.13.1",
+    "react-native": "~0.63.2",
+    "react-test-renderer": "~16.13.1",
+    "typescript": "^4.0.3"
+  },
+  "gitHead": "9b55493e7662f4d54c21f75e53eb3911675f61bc"
+}

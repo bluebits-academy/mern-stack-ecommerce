@@ -1,0 +1,70 @@
+{
+  "name": "react-native-swiper",
+  "keywords": [
+    "react-component",
+    "react-native",
+    "ios"
+  ],
+  "version": "1.6.0",
+  "description": "Swiper component for React Native.",
+  "main": "index.js",
+  "scripts": {
+    "commit": "npx git-cz",
+    "start": "react-native start",
+    "lint": "standard | snazzy",
+    "update": "updtr",
+    "precommit": "git diff --name-only --cached --relative | grep '\\.jsx\\?$' | xargs standard | snazzy; if [ $? -ne 0 ]; then exit 1; fi",
+    "test": "npm run lint"
+  },
+  "pre-commit": {
+    "run": [
+      "precommit"
+    ],
+    "silent": true
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "global": [
+      "__DEV__",
+      "FormData",
+      "requestAnimationFrame",
+      "alert",
+      "setImmediate",
+      "fetch"
+    ],
+    "ignore": [
+      "dist/",
+      "mock/",
+      "node_modules/"
+    ]
+  },
+  "ava": {
+    "babel": "inherit",
+    "require": []
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leecade/react-native-swiper.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leecade/react-native-swiper/issues"
+  },
+  "homepage": "https://github.com/leecade/react-native-swiper#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "rimraf": "^2.5.4",
+    "snazzy": "^7.1.0",
+    "standard": "^13.0.1",
+    "updtr": "^2.0.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}

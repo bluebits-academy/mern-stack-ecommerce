@@ -44,6 +44,7 @@ const Checkout = (props) => {
     }, [])
 
     const checkOut = () => {
+        console.log("orders", orderItems)
         let order = {
             city,
             country,

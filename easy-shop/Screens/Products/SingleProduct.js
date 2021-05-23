@@ -68,7 +68,7 @@ const SingleProduct = (props) => {
                    <EasyButton 
                    primary
                    medium
-                   onPress={() => {props.addItemToCart(item),
+                   onPress={() => {props.addItemToCart(item.id),
                         Toast.show({
                             topOffset: 60,
                             type: "success",

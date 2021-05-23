@@ -1,0 +1,1 @@
+{"version":3,"sources":["NavigationContext.ts"],"names":["React","createContext","undefined"],"mappings":"AAAA,OAAO,KAAKA,KAAZ,MAAuB,OAAvB,C,CAEA;;AACA,4BAAeA,KAAK,CAACC,aAAN,CAAoBC,SAApB,CAAf","sourcesContent":["import * as React from 'react';\n\n// Change undefined to null in next major version bump\nexport default React.createContext(undefined);\n"]}

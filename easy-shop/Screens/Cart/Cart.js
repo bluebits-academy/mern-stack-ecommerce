@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import {
   View,
   Dimensions,
@@ -21,6 +21,9 @@ import EasyButton from "../../Shared/StyledComponents/EasyButton"
 import { connect } from "react-redux";
 import * as actions from "../../Redux/Actions/cartActions";
 import AuthGlobal from "../../Context/store/AuthGlobal"
+import axios from "axios";
+import baseURL from "../../assets/common/baseUrl";
+import AsyncStorage from "@react-native-community/async-storage"
 
 var { height, width } = Dimensions.get("window");
 
@@ -28,18 +31,42 @@ const Cart = (props) => {
 
   const context = useContext(AuthGlobal);
 
-    var total = 0;
-    props.cartItems.forEach(cart => {
-        return (total += cart.product.price)
-    });
+  // Add this
+  const [productUpdate, setProductUpdate] = useState()
+  const [totalPrice, setTotalPrice] = useState()
+  useEffect(() => {
+    getProducts()
+    return () => {
+      setProductUpdate()
+      setTotalPrice()
+    }
+  }, [props])
+  
+    const getProducts = () => {
+      var products = [];
+      props.cartItems.forEach(cart => {
+        axios.get(`${baseURL}products/${cart.product}`).then(data => {
+          products.push(data.data)
+          setProductUpdate(products)
+          var total = 0;
+          products.forEach(product => {
+            const price = (total += product.price)
+              setTotalPrice(price)
+          });
+        })
+        .catch(e => {
+          console.log(e)
+        })
+      })
+    }
 
   return (
     <>
-      {props.cartItems.length ? (
+      {productUpdate ? (
         <Container>
           <H1 style={{ alignSelf: "center" }}>Cart</H1>
           <SwipeListView
-            data={props.cartItems}
+            data={productUpdate}
             renderItem={(data) => (
              <CartItem item={data} />
             )}
@@ -63,7 +90,7 @@ const Cart = (props) => {
           />
           <View style={styles.bottomContainer}>
             <Left>
-                <Text style={styles.price}>$ {total}</Text>
+                <Text style={styles.price}>$ {totalPrice}</Text>
             </Left>
             <Right>
                 <EasyButton

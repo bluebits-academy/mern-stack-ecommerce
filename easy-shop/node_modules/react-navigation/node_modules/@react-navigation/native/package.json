@@ -1,0 +1,60 @@
+{
+  "name": "@react-navigation/native",
+  "version": "3.8.3",
+  "description": "React Native support for React Navigation",
+  "main": "lib/commonjs/index.js",
+  "react-native": "lib/module/index.js",
+  "module": "lib/module/index.js",
+  "files": [
+    "src",
+    "lib"
+  ],
+  "scripts": {
+    "prepare": "bob build",
+    "clean": "del lib"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public",
+    "tag": "4.x"
+  },
+  "keywords": [
+    "react-native",
+    "react-navigation",
+    "ios",
+    "android"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-navigation/react-navigation-native.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/react-navigation/react-navigation-native/issues"
+  },
+  "homepage": "https://github.com/react-navigation/react-navigation-native#readme",
+  "dependencies": {
+    "hoist-non-react-statics": "^3.3.2",
+    "react-native-safe-area-view": "^0.14.9"
+  },
+  "devDependencies": {
+    "@react-native-community/bob": "^0.16.2",
+    "@react-navigation/core": "^3.7.9",
+    "@types/react-test-renderer": "^16.9.3",
+    "del-cli": "^3.0.1",
+    "react": "~16.13.1",
+    "react-native": "~0.63.2",
+    "react-native-gesture-handler": "~1.7.0",
+    "react-test-renderer": "~16.13.1"
+  },
+  "@react-native-community/bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module"
+    ]
+  },
+  "gitHead": "9b55493e7662f4d54c21f75e53eb3911675f61bc"
+}
