@@ -100,7 +100,7 @@ const Checkout = (props) => {
                     keyboardType={"numeric"}
                     onChangeText={(text) => setZip(text)}
                 />
-                <Item picker>
+//                 <Item picker>
                     <Picker
                         mode="dropdown"
                         iosIcon={<Icon name="arrow-down" color={"#007aff"} />}
@@ -119,7 +119,7 @@ const Checkout = (props) => {
                                     />
                         })}
                     </Picker>
-                </Item>
+//                 </Item>
                 <View style={{ width: '80%', alignItems: "center" }}>
                     <Button title="Confirm" onPress={() => checkOut()}/>
                 </View>
